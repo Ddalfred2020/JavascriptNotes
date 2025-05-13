@@ -6,7 +6,7 @@ to create a variable in javascript we use the ` let key word` the let key word c
 
 variable can also be created using the const keyword infact this is the recommended way of creating variablebut you can use the let keyword to create variable whose value will change during the cause of the program
 ```
-cons sum = 120;
+const sum = 120;
 ```
 
 The values of a variable can be reasign, the let variable can be reasign but the variable created with the const key cannot be reassign
