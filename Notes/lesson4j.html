@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          Button
+        </title>
+        <style>
+            p{
+                margin: 0;
+            }
+            .cart{
+                background-color: yellow;
+                color: black;
+                border: solid 1px rgb(51, 50, 50);
+                margin-right:2px;
+            }
+            .buy{
+               background-color:orange;
+                color: black;
+                border: solid 1px rgb(51, 50, 50); 
+            }
+            p{
+                color: black;
+                font-size: 18px;
+                font-weight: 400;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .bt1{
+                background-color: white;
+                color: black;
+                border: solid 1px gray;
+                margin-right:2px ;
+            }
+
+        </style>
+    </head>
+    <body>
+     <p>Adult Plain Cotton T-shirt</p>
+     <p>Price: $7:99</p>
+     <button class="cart" onclick="
+         alert('Added');
+     ">Add to cart</button>
+     <button class="buy" onclick="
+     console.log('Loading.....');
+     alert('Purchased');  
+     ">Buy now</button>
+     <button class="bt1" onclick="
+        let cartQuantity = 0;
+        cartQuantity += 4;
+        console.log(cartQuantity);
+     ">+4</button>
+     <button class="bt1" onclick="
+         cartQuantity = 0;
+         cartQuantity += 5;
+         console.log(cartQuantity);
+     ">+5</button>
+     <button class="bt2" onclick="
+        cartQuantity--
+     ">Remove from cart</button>
+    </body>
+</html>
