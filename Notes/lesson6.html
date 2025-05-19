@@ -10,18 +10,12 @@
     <body>
         <p>This is the Rock, Paper and Scissor game</p>
         <button onclick="
-             computerMove = computerPlay();
-               playerMove = 'Rock';
                playGame('Rock');  
         ">Rock</button>
         <button onclick="
-             computerMove = computerPlay();
-              playerMove = 'paper';
               playGame('paper');
         ">Paper</button>
         <button onclick="
-              computerMove = computerPlay();
-              playerMove = 'scissor';
               playGame('scissor');
         ">Scissors</button>
         <button onclick="
@@ -52,8 +46,9 @@
            return computerMove
       }
           
-           let playerMove ='';
+          
          function playGame(playerMove){
+            const computerMove = computerPlay();
              let result='';
            if(playerMove === 'Rock'){
                 if(computerMove === 'Rock'){
